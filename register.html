@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Auction Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/register.css" type="text/css" media="all">
+	<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome-all.css" type="text/css" media="all">
+    
+
+</head>
+
+<body>
+    <h1 class="title-agile text-center">Online Auction Register</h1>
+    <div class="content-w3ls">
+        <div class="agileits-grid">
+            <div class="content-top-agile">
+                <h2>Register Your Account</h2>
+            </div>
+            <div class="content-bottom">
+                <form action="#" method="post">
+				<i class="fab fa-centercode"></i>
+                    <div class="field_w3ls">
+                        <div class="field-group">
+                            <input name="text1" id="text1" type="text" value="" placeholder="Username" required>
+                        </div>
+                        <div class="field-group">
+                            <input name="email" id="email" type="email" value="" placeholder="Email" required>
+                        </div>
+                        <div class="field-group">
+                            <input id="password-field" type="password" class="form-control" name="password" value="" placeholder="Password">
+                            <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                        </div>
+                    </div>
+                    <div class="wthree-field">
+                        <input id="saveForm" name="saveForm" type="submit" value="Get Started" />
+                    </div>
+					<p class="signin">or sign up with <a href="#">facebook</a></p>
+					<p class="terms">By signing up, you accept our <a href="#">Terms of use</a> and <a href="#">Privicy policy</a> </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright text-center">
+        <p>© 2019 Online Auction Register Form. All rights reserved | Design by
+           Tran Truc Duc (TTD Team)
+        </p>
+    </div>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script>
+        $(".toggle-password").click(function () {
+
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
+    </script>
+
+</body>
+</html>
